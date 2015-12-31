@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ZDWeakProxy : NSProxy
+@interface ZDForwardProxy : NSProxy
 
 + (id)forwardToProxy:(id)realDelegate associatedObject:(id)object;
 

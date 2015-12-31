@@ -6,17 +6,17 @@
 //  Copyright © 2015年 Fate.D.Bourne. All rights reserved.
 //
 
-#import "ZDForwardToProxy.h"
+#import "ZDWeakProxy.h"
 #import <objc/runtime.h>
 
-@interface ZDForwardToProxy ()
+@interface ZDWeakProxy ()
 
 @property (nonatomic, strong) Class realDelegateClass;
 @property (nonatomic, weak  ) id realDelegate;
 
 @end
 
-@implementation ZDForwardToProxy
+@implementation ZDWeakProxy
 
 + (id)forwardToProxy:(id)realDelegate associatedObject:(id)object
 {
@@ -24,7 +24,7 @@
 	NSAssert(object, @"Trying associate forwarder to a nil object");
 
 	// creat proxy to do the forwarding
-	ZDForwardToProxy *forwarder = [ZDForwardToProxy alloc];
+	ZDWeakProxy *forwarder = [ZDWeakProxy alloc];
 	forwarder.realDelegate = realDelegate;
 	forwarder.realDelegateClass = [realDelegate class];
 

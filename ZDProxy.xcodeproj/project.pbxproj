@@ -17,7 +17,11 @@
 		BC58E8DA1C198D91003005EB /* ZDProxyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC58E8D91C198D91003005EB /* ZDProxyUITests.m */; };
 		BC58E8EC1C198ED5003005EB /* ZDProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC58E8EB1C198ED5003005EB /* ZDProxy.m */; };
 		BC58E8F21C1A6D20003005EB /* ZDMutltiDelegatesProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC58E8F11C1A6D20003005EB /* ZDMutltiDelegatesProxy.m */; };
-		BC58E8F51C1A6E54003005EB /* ZDForwardToProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC58E8F41C1A6E54003005EB /* ZDForwardToProxy.m */; };
+		BC58E8F51C1A6E54003005EB /* ZDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC58E8F41C1A6E54003005EB /* ZDWeakProxy.m */; };
+		BC5C02AE1C34DF1200773B78 /* PushController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C02AD1C34DF1200773B78 /* PushController.m */; };
+		BC5C02B21C34E07600773B78 /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C02B11C34E07600773B78 /* SecondController.m */; };
+		BC5C02B81C350FCC00773B78 /* NSObject+ZDDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C02B71C350FCC00773B78 /* NSObject+ZDDealloc.m */; };
+		BC5C02BB1C35221700773B78 /* NSTimer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C02BA1C35221700773B78 /* NSTimer+BlocksKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +62,16 @@
 		BC58E8EB1C198ED5003005EB /* ZDProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDProxy.m; sourceTree = "<group>"; };
 		BC58E8F01C1A6D20003005EB /* ZDMutltiDelegatesProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDMutltiDelegatesProxy.h; sourceTree = "<group>"; };
 		BC58E8F11C1A6D20003005EB /* ZDMutltiDelegatesProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDMutltiDelegatesProxy.m; sourceTree = "<group>"; };
-		BC58E8F31C1A6E54003005EB /* ZDForwardToProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDForwardToProxy.h; sourceTree = "<group>"; };
-		BC58E8F41C1A6E54003005EB /* ZDForwardToProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDForwardToProxy.m; sourceTree = "<group>"; };
+		BC58E8F31C1A6E54003005EB /* ZDWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDWeakProxy.h; sourceTree = "<group>"; };
+		BC58E8F41C1A6E54003005EB /* ZDWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDWeakProxy.m; sourceTree = "<group>"; };
+		BC5C02AC1C34DF1200773B78 /* PushController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushController.h; sourceTree = "<group>"; };
+		BC5C02AD1C34DF1200773B78 /* PushController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushController.m; sourceTree = "<group>"; };
+		BC5C02B01C34E07600773B78 /* SecondController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondController.h; sourceTree = "<group>"; };
+		BC5C02B11C34E07600773B78 /* SecondController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondController.m; sourceTree = "<group>"; };
+		BC5C02B61C350FCC00773B78 /* NSObject+ZDDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZDDealloc.h"; sourceTree = "<group>"; };
+		BC5C02B71C350FCC00773B78 /* NSObject+ZDDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZDDealloc.m"; sourceTree = "<group>"; };
+		BC5C02B91C35221700773B78 /* NSTimer+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+BlocksKit.h"; sourceTree = "<group>"; };
+		BC5C02BA1C35221700773B78 /* NSTimer+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BlocksKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +102,11 @@
 		BC58E8A81C198D91003005EB = {
 			isa = PBXGroup;
 			children = (
+				BC5C02AF1C34DF2800773B78 /* Classes */,
 				BC58E8B31C198D91003005EB /* ZDProxy */,
+				BC58E8B21C198D91003005EB /* Products */,
 				BC58E8CD1C198D91003005EB /* ZDProxyTests */,
 				BC58E8D81C198D91003005EB /* ZDProxyUITests */,
-				BC58E8B21C198D91003005EB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,21 +123,21 @@
 		BC58E8B31C198D91003005EB /* ZDProxy */ = {
 			isa = PBXGroup;
 			children = (
+				BC58E8B41C198D91003005EB /* Supporting Files */,
 				BC58E8B71C198D91003005EB /* AppDelegate.h */,
 				BC58E8B81C198D91003005EB /* AppDelegate.m */,
+				BC58E8C01C198D91003005EB /* Assets.xcassets */,
+				BC58E8C51C198D91003005EB /* Info.plist */,
+				BC58E8C21C198D91003005EB /* LaunchScreen.storyboard */,
+				BC58E8BD1C198D91003005EB /* Main.storyboard */,
+				BC5C02B91C35221700773B78 /* NSTimer+BlocksKit.h */,
+				BC5C02BA1C35221700773B78 /* NSTimer+BlocksKit.m */,
+				BC5C02AC1C34DF1200773B78 /* PushController.h */,
+				BC5C02AD1C34DF1200773B78 /* PushController.m */,
+				BC5C02B01C34E07600773B78 /* SecondController.h */,
+				BC5C02B11C34E07600773B78 /* SecondController.m */,
 				BC58E8BA1C198D91003005EB /* ViewController.h */,
 				BC58E8BB1C198D91003005EB /* ViewController.m */,
-				BC58E8BD1C198D91003005EB /* Main.storyboard */,
-				BC58E8EA1C198ED5003005EB /* ZDProxy.h */,
-				BC58E8EB1C198ED5003005EB /* ZDProxy.m */,
-				BC58E8F01C1A6D20003005EB /* ZDMutltiDelegatesProxy.h */,
-				BC58E8F11C1A6D20003005EB /* ZDMutltiDelegatesProxy.m */,
-				BC58E8F31C1A6E54003005EB /* ZDForwardToProxy.h */,
-				BC58E8F41C1A6E54003005EB /* ZDForwardToProxy.m */,
-				BC58E8C01C198D91003005EB /* Assets.xcassets */,
-				BC58E8C21C198D91003005EB /* LaunchScreen.storyboard */,
-				BC58E8C51C198D91003005EB /* Info.plist */,
-				BC58E8B41C198D91003005EB /* Supporting Files */,
 			);
 			path = ZDProxy;
 			sourceTree = "<group>";
@@ -134,14 +147,14 @@
 			children = (
 				BC58E8B51C198D91003005EB /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		BC58E8CD1C198D91003005EB /* ZDProxyTests */ = {
 			isa = PBXGroup;
 			children = (
-				BC58E8CE1C198D91003005EB /* ZDProxyTests.m */,
 				BC58E8D01C198D91003005EB /* Info.plist */,
+				BC58E8CE1C198D91003005EB /* ZDProxyTests.m */,
 			);
 			path = ZDProxyTests;
 			sourceTree = "<group>";
@@ -149,10 +162,25 @@
 		BC58E8D81C198D91003005EB /* ZDProxyUITests */ = {
 			isa = PBXGroup;
 			children = (
-				BC58E8D91C198D91003005EB /* ZDProxyUITests.m */,
 				BC58E8DB1C198D91003005EB /* Info.plist */,
+				BC58E8D91C198D91003005EB /* ZDProxyUITests.m */,
 			);
 			path = ZDProxyUITests;
+			sourceTree = "<group>";
+		};
+		BC5C02AF1C34DF2800773B78 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BC5C02B61C350FCC00773B78 /* NSObject+ZDDealloc.h */,
+				BC5C02B71C350FCC00773B78 /* NSObject+ZDDealloc.m */,
+				BC58E8F01C1A6D20003005EB /* ZDMutltiDelegatesProxy.h */,
+				BC58E8F11C1A6D20003005EB /* ZDMutltiDelegatesProxy.m */,
+				BC58E8EA1C198ED5003005EB /* ZDProxy.h */,
+				BC58E8EB1C198ED5003005EB /* ZDProxy.m */,
+				BC58E8F31C1A6E54003005EB /* ZDWeakProxy.h */,
+				BC58E8F41C1A6E54003005EB /* ZDWeakProxy.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,10 +315,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC58E8F21C1A6D20003005EB /* ZDMutltiDelegatesProxy.m in Sources */,
+				BC5C02B81C350FCC00773B78 /* NSObject+ZDDealloc.m in Sources */,
 				BC58E8BC1C198D91003005EB /* ViewController.m in Sources */,
+				BC5C02BB1C35221700773B78 /* NSTimer+BlocksKit.m in Sources */,
 				BC58E8EC1C198ED5003005EB /* ZDProxy.m in Sources */,
+				BC5C02AE1C34DF1200773B78 /* PushController.m in Sources */,
 				BC58E8B91C198D91003005EB /* AppDelegate.m in Sources */,
-				BC58E8F51C1A6E54003005EB /* ZDForwardToProxy.m in Sources */,
+				BC5C02B21C34E07600773B78 /* SecondController.m in Sources */,
+				BC58E8F51C1A6E54003005EB /* ZDWeakProxy.m in Sources */,
 				BC58E8B61C198D91003005EB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +365,7 @@
 				BC58E8BE1C198D91003005EB /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		BC58E8C21C198D91003005EB /* LaunchScreen.storyboard */ = {
@@ -341,6 +374,7 @@
 				BC58E8C31C198D91003005EB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -517,6 +551,7 @@
 				BC58E8E01C198D91003005EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC58E8E11C198D91003005EB /* Build configuration list for PBXNativeTarget "ZDProxyTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +560,7 @@
 				BC58E8E31C198D91003005EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC58E8E41C198D91003005EB /* Build configuration list for PBXNativeTarget "ZDProxyUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +569,7 @@
 				BC58E8E61C198D91003005EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

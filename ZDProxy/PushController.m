@@ -9,6 +9,7 @@
 #import "PushController.h"
 #import "NSObject+ZDDealloc.h"
 #import "NSTimer+BlocksKit.h"
+#import "ZDWeakProxy.h"
 
 @interface PushController ()
 
@@ -35,16 +36,18 @@
     }];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showNum:) name:@"myNotification" object:nil];
     
-//    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(showTime) userInfo:nil repeats:YES];
+    ZDWeakProxy *weakProxy = [ZDWeakProxy proxyWithTarget:self];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:weakProxy selector:@selector(showTime) userInfo:nil repeats:YES];
     
-    __weak __typeof(&*self)weakSelf = self;
-    [NSTimer bk_scheduledTimerWithTimeInterval:2 block:^(NSTimer *timer) {
-        [weakSelf showTime];
-    } repeats:YES];
+//    __weak __typeof(&*self)weakSelf = self;
+//    [NSTimer bk_scheduledTimerWithTimeInterval:2 block:^(NSTimer *timer) {
+//        [weakSelf showTime];
+//    } repeats:YES];
     
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

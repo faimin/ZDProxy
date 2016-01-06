@@ -12,7 +12,6 @@
 @interface ZDMutltiDelegatesProxy : NSProxy
 
 @property (nonatomic, strong) IBOutletCollection(id) NSArray *delegateTargets;
-//@property (nonatomic, weak  ) id mainDelegate;
 
 - (instancetype)initWithDelegates:(NSArray *)aDelegates;
 

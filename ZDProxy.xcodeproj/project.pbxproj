@@ -22,6 +22,7 @@
 		BC5C02B21C34E07600773B78 /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C02B11C34E07600773B78 /* SecondController.m */; };
 		BC5C02B81C350FCC00773B78 /* NSObject+ZDDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C02B71C350FCC00773B78 /* NSObject+ZDDealloc.m */; };
 		BC5C02BB1C35221700773B78 /* NSTimer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C02BA1C35221700773B78 /* NSTimer+BlocksKit.m */; };
+		BCB96D771C3CC8C300D9BACA /* ZDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB96D761C3CC8C300D9BACA /* ZDWeakProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		BC5C02B71C350FCC00773B78 /* NSObject+ZDDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZDDealloc.m"; sourceTree = "<group>"; };
 		BC5C02B91C35221700773B78 /* NSTimer+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+BlocksKit.h"; sourceTree = "<group>"; };
 		BC5C02BA1C35221700773B78 /* NSTimer+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BlocksKit.m"; sourceTree = "<group>"; };
+		BCB96D751C3CC8C300D9BACA /* ZDWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDWeakProxy.h; sourceTree = "<group>"; };
+		BCB96D761C3CC8C300D9BACA /* ZDWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDWeakProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +182,8 @@
 				BC58E8EB1C198ED5003005EB /* ZDProxy.m */,
 				BC58E8F31C1A6E54003005EB /* ZDForwardProxy.h */,
 				BC58E8F41C1A6E54003005EB /* ZDForwardProxy.m */,
+				BCB96D751C3CC8C300D9BACA /* ZDWeakProxy.h */,
+				BCB96D761C3CC8C300D9BACA /* ZDWeakProxy.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -319,6 +324,7 @@
 				BC58E8BC1C198D91003005EB /* ViewController.m in Sources */,
 				BC5C02BB1C35221700773B78 /* NSTimer+BlocksKit.m in Sources */,
 				BC58E8EC1C198ED5003005EB /* ZDProxy.m in Sources */,
+				BCB96D771C3CC8C300D9BACA /* ZDWeakProxy.m in Sources */,
 				BC5C02AE1C34DF1200773B78 /* PushController.m in Sources */,
 				BC58E8B91C198D91003005EB /* AppDelegate.m in Sources */,
 				BC5C02B21C34E07600773B78 /* SecondController.m in Sources */,

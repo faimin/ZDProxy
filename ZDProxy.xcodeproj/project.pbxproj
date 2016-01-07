@@ -23,7 +23,6 @@
 		BC5C02BB1C35221700773B78 /* NSTimer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C02BA1C35221700773B78 /* NSTimer+BlocksKit.m */; };
 		BCB96D801C3E120200D9BACA /* ZDWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB96D7F1C3E120200D9BACA /* ZDWeakProxy.m */; };
 		BCB96D831C3E12EF00D9BACA /* ZDForwardProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB96D821C3E12EF00D9BACA /* ZDForwardProxy.m */; };
-		BCB96D861C3E176000D9BACA /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB96D851C3E176000D9BACA /* YYWeakProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,8 +75,6 @@
 		BCB96D7F1C3E120200D9BACA /* ZDWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDWeakProxy.m; sourceTree = "<group>"; };
 		BCB96D811C3E12EF00D9BACA /* ZDForwardProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDForwardProxy.h; sourceTree = "<group>"; };
 		BCB96D821C3E12EF00D9BACA /* ZDForwardProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDForwardProxy.m; sourceTree = "<group>"; };
-		BCB96D841C3E176000D9BACA /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
-		BCB96D851C3E176000D9BACA /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,8 +184,6 @@
 				BCB96D821C3E12EF00D9BACA /* ZDForwardProxy.m */,
 				BCB96D7E1C3E120200D9BACA /* ZDWeakProxy.h */,
 				BCB96D7F1C3E120200D9BACA /* ZDWeakProxy.m */,
-				BCB96D841C3E176000D9BACA /* YYWeakProxy.h */,
-				BCB96D851C3E176000D9BACA /* YYWeakProxy.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -332,7 +327,6 @@
 				BC58E8EC1C198ED5003005EB /* ZDProxy.m in Sources */,
 				BCB96D831C3E12EF00D9BACA /* ZDForwardProxy.m in Sources */,
 				BC5C02AE1C34DF1200773B78 /* PushController.m in Sources */,
-				BCB96D861C3E176000D9BACA /* YYWeakProxy.m in Sources */,
 				BC58E8B91C198D91003005EB /* AppDelegate.m in Sources */,
 				BC5C02B21C34E07600773B78 /* SecondController.m in Sources */,
 				BC58E8B61C198D91003005EB /* main.m in Sources */,

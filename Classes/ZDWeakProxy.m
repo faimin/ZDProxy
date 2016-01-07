@@ -43,7 +43,9 @@
 }
 
 #pragma mark - NSObject Protocol
-
+//----------------------------------------------------------------------------
+// Implemented by NSProxy, so we need to forward these manually
+//----------------------------------------------------------------------------
 - (BOOL)isEqual:(id)object
 {
     return [_target isEqual:object];

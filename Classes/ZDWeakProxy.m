@@ -21,15 +21,18 @@
     return [[ZDWeakProxy alloc] initWithTarget:target];
 }
 
+#pragma mark - Forward Message
+
 - (id)forwardingTargetForSelector:(SEL)selector
 {
     return _target;
 }
 
 ///注册方法签名
+///注册为NSObject的init方法
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)sel
 {
-    return [[self class] instanceMethodSignatureForSelector:sel];
+    return [NSObject instanceMethodSignatureForSelector:@selector(init)];
 }
 
 ///转发消息
@@ -37,6 +40,18 @@
 {
     void *null = NULL;
     [invocation setReturnValue:&null];
+}
+
+#pragma mark - NSObject Protocol
+
+- (BOOL)isEqual:(id)object
+{
+    return [_target isEqual:object];
+}
+
+- (NSUInteger)hash
+{
+    return [_target hash];
 }
 
 - (BOOL)respondsToSelector:(SEL)aSelector
@@ -47,16 +62,6 @@
 - (BOOL)conformsToProtocol:(Protocol *)aProtocol
 {
     return [_target conformsToProtocol:aProtocol];
-}
-
-// NSProxy implements these for some incomprehensibly stupid reason
-- (BOOL)isEqual:(id)object
-{
-    return [_target isEqual:object];
-}
-- (NSUInteger)hash
-{
-    return [_target hash];
 }
 
 - (Class)superclass

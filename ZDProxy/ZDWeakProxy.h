@@ -1,15 +1,20 @@
 //
-//  ZDForwardProxy.h
+//  ZDWeakProxy.h
 //  ZDProxy
 //
-//  Created by 符现超 on 15/12/11.
-//  Copyright © 2015年 Fate.D.Bourne. All rights reserved.
-//  https://github.com/intuit/WeakForwarder
+//  Created by 符现超 on 16/1/6.
+//  Copyright © 2016年 Fate.D.Bourne. All rights reserved.
+//  https://github.com/mikeash/MAZeroingWeakRef
+//  https://github.com/ibireme/YYKit/blob/master/YYKit%2FUtility%2FYYWeakProxy.h
 
 #import <Foundation/Foundation.h>
 
 @interface ZDWeakProxy : NSProxy
 
-+ (id)forwardToProxy:(id)realDelegate associatedObject:(id)object;
+@property (nonatomic, weak, readonly) id target;
+
+- (instancetype)initWithTarget:(id)target;
+
++ (instancetype)proxyWithTarget:(id)target;
 
 @end

@@ -10,7 +10,19 @@
 #import "AppDelegate.h"
 
 int main(int argc, char * argv[]) {
+    int x = 0;
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        @try {
+            x = UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        }
+        @catch (NSException *exception) {
+            NSLog(@"exception reason: %@",exception.reason);
+            NSLog(@"exception debugDescription: %@",exception.debugDescription);
+            NSLog(@"exception callStackSymbols: %@",exception.callStackSymbols);
+        }
+        @finally {
+            
+        }
+        return x;
     }
 }

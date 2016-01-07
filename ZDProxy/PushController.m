@@ -10,6 +10,7 @@
 #import "NSObject+ZDDealloc.h"
 #import "NSTimer+BlocksKit.h"
 #import "ZDWeakProxy.h"
+#import "YYWeakProxy.h"
 
 @interface PushController ()
 
@@ -37,6 +38,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showNum:) name:@"myNotification" object:nil];
     
     ZDWeakProxy *weakProxy = [ZDWeakProxy proxyWithTarget:self];
+    //YYWeakProxy *weakProxy = [YYWeakProxy proxyWithTarget:self];
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:weakProxy selector:@selector(showTime) userInfo:nil repeats:YES];
     
 //    __weak __typeof(&*self)weakSelf = self;

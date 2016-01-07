@@ -27,6 +27,7 @@
 {
     self = [super init];
     if (self) {
+        //属性设为readonly,并用指针指向方式,是参照RACDynamicSignal写法
         self->_deallocBlock = [deallocBlock copy];
     }
     return self;
